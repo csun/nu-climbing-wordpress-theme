@@ -112,29 +112,12 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Do You want to display image slider on the Home Page?','sparkling'),
-		'desc' => esc_html__('Check if you want to enable slider', 'sparkling'),
-		'id'   => 'sparkling_slider_checkbox',
-		'std'  => 0,
-		'type' => 'checkbox'
-	);
-
-	$options[] = array(
-		'name'    => esc_html__('Slider Category', 'sparkling'),
-		'desc'    => esc_html__('Select a category for the featured post slider', 'sparkling'),
-		'id'      => 'sparkling_slide_categories',
-		'type'    => 'select',
-		'class'   => 'hidden',
-		'options' => $options_categories
-	);
-
-	$options[] = array(
-		'name'  => esc_html__('Number of slide items', 'sparkling'),
-		'desc'  => esc_html__('Enter the number of slide items', 'sparkling'),
-		'id'    => 'sparkling_slide_number',
-		'std'   => '3',
-		'class' => 'hidden',
-		'type'  => 'text'
+		'name'    => esc_html__('Featured image', 'sparkling'),
+		'desc'    => esc_html__('The featured image to use for the front page', 'sparkling'),
+		'id'      => 'sparkling_featured_image',
+		'type'    => 'upload',
+		'std'			=> '',
+		'class'   => 'mini'
 	);
 
 	$options[] = array(
@@ -169,67 +152,6 @@ function optionsframework_options() {
 		'id'   => 'custom_favicon',
 		'std'  => '',
 		'type' => 'upload'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Action Button', 'sparkling'),
-		'type' => 'heading'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Call For Action Text', 'sparkling'),
-		'desc' => esc_html__('Enter the text for call for action section', 'sparkling'),
-		'id'   => 'w2f_cfa_text',
-		'std'  => '',
-		'type' => 'textarea'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Call For Action Button Title', 'sparkling'),
-		'desc' => esc_html__('Enter the title for Call For Action button', 'sparkling'),
-		'id'   => 'w2f_cfa_button',
-		'std'  => '',
-		'type' => 'text'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('CFA button link', 'sparkling'),
-		'desc' => esc_html__('Enter the link for Call For Action button', 'sparkling'),
-		'id'   => 'w2f_cfa_link',
-		'std'  => '',
-		'type' => 'text'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Call For Action Text Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
-		'id'   => 'cfa_color',
-		'std'  => '',
-		'type' => 'color'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Call For Action Background Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
-		'id'   => 'cfa_bg_color',
-		'std'  => '',
-		'type' => 'color'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Call For Action Button Border Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
-		'id'   => 'cfa_btn_color',
-		'std'  => '',
-		'type' => 'color'
-	);
-
-	$options[] = array(
-		'name' => esc_html__('Call For Action Button Text Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
-		'id'   => 'cfa_btn_txt_color',
-		'std'  => '',
-		'type' => 'color'
 	);
 
 	$options[] = array(

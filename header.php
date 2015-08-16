@@ -70,10 +70,12 @@
 
 	<div id="content" class="site-content">
 
-		<div class="top-section">
-			<?php sparkling_featured_slider(); ?>
-			<?php sparkling_call_for_action(); ?>
+		<? php if( sparkling_should_display_featured_image() ) : ?>
+		
+		<div class="hero-container container" style="background-image: url(<?php echo of_get_option( 'sparkling_featured_image' ); ?>)">
 		</div>
+
+		<? php endif; ?>
 
 		<div class="container main-content-area">
 			<div class="row">
