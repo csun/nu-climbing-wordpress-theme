@@ -224,7 +224,7 @@ endif;
 
 if ( ! function_exists( 'sparkling_featured_image' ) ) :
   function sparkling_should_display_featured_image() {
-    return is_front_page() && of_get_option( 'sparkling_featured_image' ) !== '';
+    return is_front_page() && of_get_option( 'sparkling_featured_image' ) != '';
   }
 endif;
 
