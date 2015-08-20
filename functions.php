@@ -28,10 +28,7 @@ if ( ! function_exists( 'sparkling_main_content_bootstrap_classes' ) ) :
  * Add Bootstrap classes to the main-content-area wrapper.
  */
 function sparkling_main_content_bootstrap_classes() {
-	if ( is_page_template( 'page-fullwidth.php' ) ) {
-		return 'col-sm-12 col-md-10 col-md-offset-1';
-	}
-	return 'col-sm-12 col-md-8';
+	return 'col-sm-12 col-md-10 col-md-offset-1';
 }
 endif; // sparkling_main_content_bootstrap_classes
 

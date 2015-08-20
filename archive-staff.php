@@ -21,7 +21,7 @@
             echo $stafferoptions['startwrapper'];
         }
         else {
-            echo '<div id="staffer-container"><div id="staff-content" role="main">';
+            echo '<div id="staffer-container"><div id="staff-content" class="" role="main">';
         }
              
             // checks for the custom title
@@ -46,62 +46,10 @@
  
              
         <?php
-            // chooses between the grid and list layout
-            if (isset ($stafferoptions['gridlayout']) ) {
- 
-            $stafferoptions = get_option('staffer');
-                     
-            if (have_posts() ) : ?>
- 
-            <!-- Starts Grid Markup -->
-             
-            <ul class="staffer-archive-grid">
-             
-            <?php while ( have_posts() ) : ?>
-             
-            <?php the_post(); ?>
- 
-            <li>
-                <header class="staffer-staff-header">
-                <h3 class="staffer-staff-title"><a href="<?php the_permalink(); ?>">
-                    <?php echo the_title(); ?>
-                    </a>
-                </h3>
-                <?php
-                if ( get_post_meta ($post->ID,'staffer_staff_title', true) != '' ) {
-                    echo '<em>' . get_post_meta ($post->ID,'staffer_staff_title', true) . '</em><br>';
-                    }
-                    ?>
-                 
-                </header>
-                    <div class="staff-content">
-                    <?php
-                        if ( has_post_thumbnail() ) { ?>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail ( 'medium', array ('class' => 'alignleft') ); ?>
-                            </a>
-                            <?php
-                        }
-                        if ($stafferoptions['estyle'] == null or $stafferoptions['estyle'] == 'excerpt' ) {
-                            the_excerpt();
-                        } elseif ($stafferoptions['estyle'] == 'full' ) {
-                            the_content();
-                        } elseif ($stafferoptions['estyle'] == 'none' ) {
-                            // nothing to see here
-                        } 
-                        ?>
-                    </div>
-                </li>
-            <?php endwhile;
-            endif; ?>
-            </ul>
- 
-            <!-- Ends Grid Markup -->
- 
-            <?php
-          
-        }
-            if ( ! isset ($stafferoptions['gridlayout'] ) ) {
+            // I can't figure out how to remove this because
+            // I can't find the matching end brace...
+            // I hate PHP
+            if ( true ) {
  
         // staffer list template
  
@@ -111,31 +59,27 @@
  
             <!-- Starts List Markup -->
              
-            <ul class="staffer-archive-list">
+            <div class="staffer-archive-list row">
              
             <?php while ( have_posts() ) : ?>
              
             <?php the_post(); ?>
  
-            <li>
+            <div class="staffer-item col-xs-12 col-sm-6 col-md-4">
                 <header class="staffer-staff-header">
-                <h3 class="staffer-staff-title"><a href="<?php the_permalink(); ?>">
-                    <?php echo the_title(); ?>
-                    </a>
-                </h3>
-                <?php
-                if ( get_post_meta ($post->ID,'staffer_staff_title', true) != '' ) {
-                    echo '<em>' . get_post_meta ($post->ID,'staffer_staff_title', true) . '</em><br>';
-                    }
-                    ?>
-                 
+                    <h3 class="staffer-staff-title">
+                        <?php echo the_title(); ?>
+                    </h3>
+                    <?php
+                    if ( get_post_meta ($post->ID,'staffer_staff_title', true) != '' ) {
+                        echo '<em>' . get_post_meta ($post->ID,'staffer_staff_title', true) . '</em><br>';
+                        }
+                        ?>
                 </header>
                     <div class="staff-content">
                     <?php
                         if ( has_post_thumbnail() ) { ?>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail ( 'medium', array ('class' => 'alignleft') ); ?>
-                            </a>
+                            <?php the_post_thumbnail ( 'medium', array ('class' => 'alignleft') ); ?>
                             <?php
                         }
                         if ($stafferoptions['estyle'] == null or $stafferoptions['estyle'] == 'excerpt' ) {
@@ -147,10 +91,10 @@
                         } 
                         ?>
                     </div>
-                </li>
+                </div>
             <?php endwhile;
             endif; ?>
-            </ul>
+            </div>
  
             <!-- Ends List Markup -->
  

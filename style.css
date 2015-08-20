@@ -42,7 +42,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 /* =Global
 ----------------------------------------------- */
 body {
-  color: #DADADA;
+  color: #EEE;
   background-color: #303030;
   word-wrap: break-word;
   font-family: 'Open Sans', sans-serif;
@@ -779,7 +779,7 @@ button:hover {
   text-transform: uppercase;
 }
 .navbar.navbar-default {
-  background-color: #000;
+  background-color: #1F1F1F;
   font-family: 'Open Sans', serif;
   margin-bottom: 0;
   font-weight: 500;
@@ -1409,7 +1409,7 @@ html, body {
 
 .hero-title {
   text-align: center;
-  background-color: #CC0000;
+  background-color: rgba(204,0,0,0.7);
   margin-bottom: 0;
   padding: 0 8px 0 8px;
 }
@@ -1422,7 +1422,7 @@ html, body {
 
 .hero-description {
   margin: 0 auto auto;
-  background-color: #000000;
+  background-color: rgba(0,0,0,0.7);
   padding: 0 8px 0 8px;
   max-width: 80%;
 }
@@ -1456,6 +1456,22 @@ html, body {
 @media (max-width: 767px) {
   #logo {
     margin-top: 8px;
+  }
+}
+
+#staffer-container {
+  width: 100%;
+}
+
+/*  staffer clearfix */
+@media (min-width:767px) and (max-width: 991px){
+  .col-sm-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+@media (min-width:992px) {
+  .col-md-4:nth-child(3n+1){
+    clear: left;
   }
 }
 
