@@ -22,13 +22,11 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info container">
 				<div class="row">
-					<?php sparkling_social(); ?>
-					<nav role="navigation" class="col-md-6">
-						<?php sparkling_footer_links(); ?>
-					</nav>
-					<div class="copyright col-md-6">
+					<div class="col-sm-6">
+						<?php sparkling_social(); ?>
+					</div>
+					<div class="copyright col-sm-4">
 						<?php echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
-						<?php sparkling_footer_info(); ?>
 					</div>
 				</div>
 			</div><!-- .site-info -->

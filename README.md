@@ -1,0 +1,1 @@
+This wordpress theme is a tweaked version of [Sparkling](https://colorlib.com/wp/themes/sparkling/) used for the [Northeastern climbing team website](http://www.northeastern.edu/climbing/). See that inline svg logo? *I made that.*

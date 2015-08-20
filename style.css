@@ -1252,7 +1252,6 @@ p.logged-in-as {
 }
 .social-icons {
   position: relative;
-  text-align: center;
 }
 #secondary .widget .social-icons {
   text-align: left;
