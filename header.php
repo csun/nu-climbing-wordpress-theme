@@ -75,8 +75,12 @@
 		<div class="hero-container container" style="background-image: url(<?php echo of_get_option( 'sparkling_featured_image' ); ?>)">
 			<div class="row">
 				<div class="hero-content col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
-					<h1 class="hero-title"><?php echo bloginfo('name'); ?></h1>
-					<p class="hero-description"><?php echo bloginfo('description'); ?></p>
+					<div class="hero-title">
+						<h1><?php echo bloginfo('name'); ?></h1>
+					</div>
+					<div class="hero-description">
+						<p><?php echo bloginfo('description'); ?></p>
+					</div>
 				</div>
 			</div>
 		</div>

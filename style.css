@@ -1404,15 +1404,28 @@ p.logged-in-as {
 
 .hero-title {
   text-align: center;
-  font-size: 52px;
-  background-color: rgba(255,0,0,.5);
+  background-color: #CC0000;
+  margin-bottom: 0;
+}
+
+.hero-title h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 50px;
 }
 
 .hero-description {
-  margin: 0 16px 16px 16px;
-  background-color: rgba(0,0,0,.5);
+  margin: 0 auto auto;
+  background-color: #000000;
+  max-width: 80%;
+}
+
+.hero-description p {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 24px;
+  color: #FFF;
   text-align: center;
-  font-size: 30px;
 }
 
 #logo {
