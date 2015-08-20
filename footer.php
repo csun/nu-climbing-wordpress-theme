@@ -30,7 +30,6 @@
 					</div>
 				</div>
 			</div><!-- .site-info -->
-			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
 		</footer><!-- #colophon -->
 	</div>
 </div><!-- #page -->
