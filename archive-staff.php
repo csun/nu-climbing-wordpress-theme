@@ -79,7 +79,7 @@
                     <div class="staff-content">
                     <?php
                         if ( has_post_thumbnail() ) { ?>
-                            <?php the_post_thumbnail ( 'medium', array ('class' => 'alignleft') ); ?>
+                            <?php the_post_thumbnail ( 'medium' ); ?>
                             <?php
                         }
                         if ($stafferoptions['estyle'] == null or $stafferoptions['estyle'] == 'excerpt' ) {

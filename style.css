@@ -1461,6 +1461,7 @@ html, body {
 
 #staffer-container {
   width: 100%;
+  padding: 45px 50px;
 }
 
 /*  staffer clearfix */
@@ -1473,6 +1474,26 @@ html, body {
   .col-md-4:nth-child(3n+1){
     clear: left;
   }
+}
+
+.staffer-archive-page-title {
+  margin-top: 0;
+}
+
+.staffer-staff-header {
+  margin-bottom: 16px;
+}
+
+.staffer-staff-header h3 {
+  margin-bottom: 0;
+}
+
+.staffer-item {
+  margin-bottom: 24px;
+}
+
+.staff-content img {
+  margin-bottom: 16px;
 }
 
 /* =Elements when no javaScript is present
